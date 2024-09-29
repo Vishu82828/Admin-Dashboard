@@ -2,6 +2,7 @@
 /* dark theme */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -229,8 +230,40 @@ main .recent_order {
 main .recent_order h2 {
   color: #363949;
 }
+main .recent_order h1 {
+  color: #363949;
+  margin-bottom: 1rem;
+}
 main .recent_order table {
   background-color: #fff;
   border-radius: 2rem;
   width: 100%;
-}/*# sourceMappingURL=Style.css.map */
+  padding: 0rem;
+  text-align: center;
+  box-shadow: 0 2rem 3rem var(--clr-light);
+  transition: all 0.3s ease;
+  color: #363949;
+}
+main .recent_order table:hover {
+  box-shadow: none;
+}
+main .recent_order table thead {
+  padding: 1rem;
+  background-color: #363949;
+  color: #fff;
+}
+main .recent_order table tbody tr {
+  height: 3.8rem;
+  border-bottom: 1px solid #363949;
+}
+main .recent_order table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+main .recent_order table tbody tr th {
+  padding: 1rem;
+}
+main .recent_order table .primary {
+  color: #2196f3;
+}
+
+/* dark theme *//*# sourceMappingURL=Style.css.map */
