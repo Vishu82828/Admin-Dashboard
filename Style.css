@@ -327,6 +327,7 @@ main .recent_order table .primary {
   display: flex;
   justify-content: start;
   gap: 2rem;
+  border-radius: 18px;
 }
 .container .right .top button {
   display: none;
@@ -360,6 +361,7 @@ main .recent_order table .primary {
   display: flex;
   gap: 2rem;
   text-align: center;
+  border-radius: 2%;
 }
 .container .right .top .profile .info h3 {
   color: #363949;
@@ -379,11 +381,14 @@ main .recent_order table .primary {
   margin-left: -20px;
 }
 .container .right .recent-update h2 {
+  margin-left: 0.8rem;
   color: #363949;
 }
 .container .right .recent-update .updates {
+  margin-left: 0.6rem;
+  margin-top: 0.6rem;
   background-color: #fff;
-  padding: 0rem;
+  padding: 1rem;
   border-radius: 2rem;
   box-shadow: 0 2rem 3rem var(--clr-light);
   transition: all 0.3s ease;
@@ -426,10 +431,10 @@ main .recent_order table .primary {
 .container .right .sale_analytic .item:hover {
   box-shadow: none;
 }
-.container .right .sale_analytic .item:nth-child(3).icon {
+.container .right .sale_analytic .item:nth-child(3) .icon {
   background-color: #41f1b6;
 }
-.container .right .sale_analytic .item:nth-child(4).icon {
+.container .right .sale_analytic .item:nth-child(4) .icon {
   background-color: #41f1b6;
 }
 .container .right .sale_analytic .item .icon {
@@ -446,6 +451,6 @@ main .recent_order table .primary {
   margin-left: 15px;
   display: flex;
 }
-.container .right .sale_analytic h3 {
+.container .right .sale_analytic .item h3 {
   color: #363949;
 }/*# sourceMappingURL=Style.css.map */
