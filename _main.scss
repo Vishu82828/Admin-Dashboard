@@ -14,10 +14,10 @@ body{
     background-color: $color-background;
     font-family: 'Poppins',sans-serif;
     width: 100vh;
-    //height: 100vh;
+    height: 100vh;
     font-size: 0.88rem;
     user-select: none;
-    overflow: hidden;
+    //overflow: hidden;
     .container{
         display: grid;
         grid-template-columns: 14rem auto 14rem;

@@ -1,6 +1,34 @@
 @import "_variable";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@mixin Insight_div ($color){
+        background-color: $white;
+        padding: $card-padding;
+        border-radius: $card-border-radius;
+        margin-top: 1rem;
+        box-shadow: $box-shadow;
+        transition: all .3s ease;
+        span{
+            background-color: $color;
+            padding: 0.5rem;
+            border-radius: 50%;
+            color: $white;
+            font-size: 2rem;
+        }
+        &:hover{
+            box-shadow: none;
+        }
+        .middle{
+            padding: 1rem;
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1{
+                font-size: 1.6rem;
+            }
+        }
+}
 main{
     h1{
         color: $dark;
@@ -26,80 +54,52 @@ main{
         }
         h3{
             color: $dark;
-        }
-        p{
-            color: $dark;
-        }
+        }    
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 1.6rem;
         svg{
-            height: 150px;
-            width: 150px;
+            height: 250px;
+            width: 250px;
             position: absolute;
-            top: 0;
+            top: -2.5rem;
+            left: 0rem;
+            right: -2rem;
+            bottom: 0rem;
             circle{
                 fill: none;
                 stroke: $primary;
-                transform: rotate(270,80,80);
+                transform: rotate(270 80 80);
                 stroke-width: 5;
+                stroke-dasharray: 188.4; // Circumference of the circle (2 * π * r)
+                stroke-dashoffset: 37.68; // 20% of the circumference (188.4 * 0.2)
             }
         }
-        div{
-            background-color: $white;
-            //padding: $card-padding;
-            border-radius: $card-border-radius;
-            margin-top: 1rem;
-            box-shadow: $box-shadow;
-            transition: all .3s ease;
-            span{
-                background-color: coral;
-                padding: 0.5rem;
-                border-radius: 50%;
-                color: $white;
-                font-size: 2rem;
-            }
-            &:hover{
-                box-shadow: none;
-            }
-            .expense{
-                background-color: $danger;
-            }
-            .income{
-                background: $success;
-            }
-            .middle{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                h1{
-                    font-size: 1.6rem;
-                }
-            }
-            .sale{
-                svg{
-                    circle{
-                        stroke-dashoffset: 10;
-                        stroke-dasharray: 150;
-                    }
-                }
-            }
-         .progress{
+        .progress{
             position: relative;
-            height: 68px;
-            width: 68px;
+            //height: 5rem;
+            width: 5rem;
             border-radius: 50px;
             .number{
                 position: absolute;
-                top: 5%;
+                top: 0%;
                 left: 5%;
                 height: 100%;
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                //margin-top: 7px;
             }
-         }   
+        }
+        .expenses{
+            @include Insight_div($danger)
+        }
+        .income{
+            @include Insight_div($success)
+        }
+        .sales{
+            @include Insight_div($primary)
         }
     }
     .recent_order{
@@ -125,15 +125,20 @@ main{
                 box-shadow: none;
             }
             thead{
-                padding: 1rem;
-                background-color: $dark;
-                color: $white;
-            }
+                height: 3rem;
+                th{
+                    tr {
+                            padding: 1rem;
+                            //background-color: $dark;
+                            color: $dark;
+                        }
+                    }
+                }
             tbody{
                 tr{
                     height: 3.8rem;
                     border-bottom: 1px solid $dark;
-                    //padding: 2rem;
+                    padding: 2rem;
                     &:hover{
                         background-color: #f1f1f1;
                     }
