@@ -1,0 +1,124 @@
+{
+    "Student": [
+        {
+            "postId": 1,
+            "id": 1,
+            "name": "laborum",
+            "email": "Eliseo@gardner.biz"
+        },
+        {
+            "postId": 1,
+            "id": 2,
+            "name": "Similique earum",
+            "email": "Jayne_Kuhic@sydney.com"
+        },
+        {
+            "postId": 1,
+            "id": 3,
+            "name": "animi",
+            "email": "Nikita@garfield.biz"
+        },
+        {
+            "postId": 1,
+            "id": 4,
+            "name": "odio sit",
+            "email": "Lew@alysha.tv"
+        },
+        {
+            "postId": 1,
+            "id": 5,
+            "name": "culpa",
+            "email": "Hayden@althea.biz"
+        },
+        {
+            "postId": 2,
+            "id": 6,
+            "name": "nihil autem",
+            "email": "Presley.Mueller@myrl.com"
+        },
+        {
+            "postId": 2,
+            "id": 7,
+            "name": "voluptatum",
+            "email": "Dallas@ole.me"
+        },
+        {
+            "postId": 2,
+            "id": 8,
+            "name": "dolorem",
+            "email": "Mallory_Kunze@marie.org"
+        },
+        {
+            "postId": 2,
+            "id": 9,
+            "name": "voluptas",
+            "email": "Meghan_Littel@rene.us"
+        },
+        {
+            "postId": 2,
+            "id": 10,
+            "name": "atque tenetur",
+            "email": "Carmen_Keeling@caroline.name"
+        },
+        {
+            "postId": 3,
+            "id": 11,
+            "name": "nostrum sunt",
+            "email": "Veronica_Goodwin@timmothy.net"
+        },
+        {
+            "postId": 3,
+            "id": 12,
+            "name": "dolor",
+            "email": "Oswald.Vandervort@leanne.org"
+        },
+        {
+            "postId": 3,
+            "id": 13,
+            "name": "sapiente",
+            "email": "Kariane@jadyn.tv"
+        },
+        {
+            "postId": 3,
+            "id": 14,
+            "name": "repudiandae",
+            "email": "Nathan@solon.io"
+        },
+        {
+            "postId": 3,
+            "id": 15,
+            "name": "tenetur",
+            "email": "Maynard.Hodkiewicz@roberta.com"
+        },
+        {
+            "postId": 4,
+            "id": 16,
+            "name": "dolorum",
+            "email": "Christine@ayana.info"
+        },
+        {
+            "postId": 4,
+            "id": 17,
+            "name": "animi quis",
+            "email": "Preston_Hudson@blaise.tv"
+        },
+        {
+            "postId": 4,
+            "id": 18,
+            "name": "nulla ab",
+            "email": "Vincenza_Klocko@albertha.name"
+        },
+        {
+            "postId": 4,
+            "id": 19,
+            "name": "officiis",
+            "email": "Madelynn.Gorczany@darion.biz"
+        },
+        {
+            "postId": 4,
+            "id": 20,
+            "name": "voluptates",
+            "email": "Mariana_Orn@preston.org"
+        }
+    ]
+}
