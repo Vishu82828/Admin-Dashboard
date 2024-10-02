@@ -1,0 +1,150 @@
+@import "_variable";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+}
+
+$Background: #222831;
+$hover-color: #393E46;
+$primary-color: #EEEEEE;
+$secondary-color: #FD7014;
+$font-family: 'Arial, sans-serif';
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+    font-family: $font-family;
+    background-color: $Background;
+    color: $primary-color;
+
+    .container {
+        @include flex-center;
+        flex-direction: column;
+        padding: 20px;
+
+        .btn {
+            margin-bottom: 20px;
+
+            button {
+                background-color: $secondary-color;
+                color: $Background;
+                border: none;
+                padding: 10px 20px;
+                margin: 5px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: darken($secondary-color, 15%);
+                }
+            }
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+
+            table {
+                //width: 100%;
+                border-collapse: collapse;
+
+                thead {
+                    background-color: $secondary-color;
+                    color: $Background;
+
+                    tr {
+
+                        th,
+                        td {
+                            padding: 10px;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        &:nth-child(even) {
+                            background-color: $hover-color; //#f9f9f9ea;
+                        }
+
+                        &:hover {
+                            background-color: lighten($primary-color, 40%);
+                            color: $Background;
+                        }
+
+                        td {
+                            padding: 10px;
+                            border: 1px solid #ddd;
+                        }
+                    }
+                }
+            }
+        }
+
+        .form {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            border: 3px solid $primary-color;
+
+            .heading_form{
+                font-size: 2.7rem;
+                color: $secondary-color;
+                margin-top: 1rem;
+            }
+
+            form {
+                width: 70%;
+                margin-left: 15%;
+                //margin-top: 0rem;
+                //@include flex-center;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+
+                .form-group {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    input {
+                        flex: 1;
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                    }
+                }
+
+                button {
+                    background-color: $secondary-color;
+                    color: $Background;
+                    border: none;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: darken($secondary-color, 10%);
+                    }
+                }
+            }
+        }
+
+    }
+}
