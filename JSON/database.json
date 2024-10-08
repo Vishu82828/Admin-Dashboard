@@ -1,27 +1,6 @@
 {
   "Employee": [
     {
-      "id": "497",
-      "name": "Abbott, Champlin and Gutmann",
-      "url": "https://picsum.photos/seed/e5obo/640/480",
-      "exampleEmail": "Ezekiel_Hyatt@example.net",
-      "streetAddress": "3652 Shad Fall"
-    },
-    {
-      "id": "056",
-      "name": "Johnson, Koch and Macejkovic",
-      "url": "https://loremflickr.com/640/480?lock=1264493113901056",
-      "exampleEmail": "Trey_Satterfield80@example.net",
-      "streetAddress": "16588 Simonis Circles"
-    },
-    {
-      "id": "802",
-      "name": "Beier Group",
-      "url": "https://picsum.photos/seed/AqFXp/640/480",
-      "exampleEmail": "Kacie14@example.org",
-      "streetAddress": "884 Alexys Route"
-    },
-    {
       "id": "696",
       "name": "Gusikowski, Goyette and King",
       "url": "https://picsum.photos/seed/64rtU5/640/480",

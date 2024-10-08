@@ -20,6 +20,8 @@ async function fetch_data() {
         <td>${value.url}</td>
         <td>${value.email}</td>
         <td>${value.streetAddress}</td>
+        <button onclick="mydel('${value.id}')">Delete</button>
+        <td><button onclick="(myedit(${value.id}))">Edit</button></td>
     </tr>
 
     `).join("")
@@ -46,22 +48,22 @@ function insert_data(click) {
         },
         body: JSON.stringify(formData)
     })
-    .then(()=>{alert("Successfully inserted .. !!!")})
-    .catch(()=>{alert("Error, not inserted")})
-    // .then(response => {
-    //     if (!response.ok) {
-    //         throw new Error('Network response was not ok');
-    //     }
-    //     return response.json();
-    // })
-    // .then(data => {
-    //     console.log("Success:", data);
-    //     alert("Successfully inserted!");
-    // })
-    // .catch(error => {
-    //     console.error("Error:", error);
-    //     alert("Error, not inserted");
-    // });
+    // .then(()=>{alert("Successfully inserted .. !!!")})
+    // .catch(()=>{alert("Error, not inserted")})
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log("Success:", data);
+        alert("Successfully inserted!");
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Error, not inserted");
+    });
 }
 
 document.getElementById("toggle").addEventListener("click",()=>{
@@ -72,3 +74,19 @@ document.getElementById("toggle").addEventListener("click",()=>{
         form.style.display = "none"
     }
 }) 
+
+function mydel(id) {
+    fetch(`http://localhost:3000/Employee/${id}`, {
+        method: "DELETE"
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        alert("Deleted");
+        fetch_data()
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+}
