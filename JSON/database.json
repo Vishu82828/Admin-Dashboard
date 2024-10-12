@@ -1,13 +1,6 @@
 {
   "Employee": [
     {
-      "id": "696",
-      "name": "Gusikowski, Goyette and King",
-      "url": "https://picsum.photos/seed/64rtU5/640/480",
-      "exampleEmail": "Eldora52@example.org",
-      "streetAddress": "16929 Eliezer Lock"
-    },
-    {
       "id": "505",
       "name": "Morar - Corkery",
       "url": "https://picsum.photos/seed/gHe6xpWH/640/480",

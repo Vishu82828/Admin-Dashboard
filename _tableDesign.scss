@@ -52,7 +52,7 @@ body {
         }
 
         .table {
-            width: 100%;
+            width: 80%;
             margin-bottom: 20px;
             text-align: center;
             width: 100%;
@@ -90,6 +90,57 @@ body {
                             padding: 10px;
                             border: 1px solid #ddd;
                         }
+                    }
+                }
+            }
+        }
+
+        .demoo {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            border: 3px solid $primary-color;
+
+            .heading_form {
+                font-size: 2.7rem;
+                color: $secondary-color;
+                margin-top: 1rem;
+            }
+
+            form {
+                width: 70%;
+                margin-left: 15%;
+                //margin-top: 0rem;
+                //@include flex-center;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+
+                .form-group {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    input {
+                        flex: 1;
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                    }
+                }
+
+                button {
+                    background-color: $secondary-color;
+                    color: $Background;
+                    border: none;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: darken($secondary-color, 10%);
                     }
                 }
             }
