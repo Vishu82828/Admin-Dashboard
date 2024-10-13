@@ -1,13 +1,6 @@
 {
   "Employee": [
     {
-      "id": "505",
-      "name": "Morar - Corkery",
-      "url": "https://picsum.photos/seed/gHe6xpWH/640/480",
-      "exampleEmail": "Jerel_Lindgren4@example.org",
-      "streetAddress": "2579 Kyler Trail"
-    },
-    {
       "id": "951",
       "name": "Conn - Toy",
       "url": "https://picsum.photos/seed/oxaEVml/640/480",
@@ -288,11 +281,11 @@
       "streetAddress": "Bhopal, India"
     },
     {
-      "id": "999",
-      "name": "abhishek gupta",
-      "url": "https:// mywebsite.ghupta",
-      "email": "ghupta@gmsil.com",
-      "streetAddress": "1st Floor, 122/A, khawaja Colony"
+      "id": "",
+      "name": "Vishwajeet Kumar Singh",
+      "url": "www.vishwajeet.com",
+      "email": "vishwajeetsingh8422@gmail.com",
+      "streetAddress": "Barhaunian"
     }
   ]
 }
