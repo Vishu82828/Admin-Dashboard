@@ -36,10 +36,9 @@ body .container .btn button:hover {
   background-color: #c34e02;
 }
 body .container .table {
-  width: 100%;
+  width: 80%;
   margin-bottom: 20px;
   text-align: center;
-  width: 100%;
 }
 body .container .table table {
   border-collapse: collapse;
@@ -64,37 +63,38 @@ body .container .table table tbody tr td {
   padding: 10px;
   border: 1px solid #ddd;
 }
-body .container .form {
+body .container .demoo, body .container .form {
   width: 100%;
   max-width: 600px;
   text-align: center;
   border: 3px solid #EEEEEE;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #2c3440;
 }
-body .container .form .heading_form {
-  font-size: 2.7rem;
+body .container .demoo .heading_form_edit, body .container .demoo .heading_form, body .container .form .heading_form_edit, body .container .form .heading_form {
+  font-size: 2rem;
   color: #FD7014;
-  margin-top: 1rem;
+  margin: 1rem 0;
+  text-align: center;
 }
-body .container .form form {
-  width: 70%;
-  margin-left: 15%;
+body .container .demoo .formEdit, body .container .demoo form, body .container .form .formEdit, body .container .form form {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
 }
-body .container .form form .form-group {
+body .container .demoo .formEdit .form-group-edit, body .container .demoo .formEdit .form-group, body .container .demoo form .form-group-edit, body .container .demoo form .form-group, body .container .form .formEdit .form-group-edit, body .container .form .formEdit .form-group, body .container .form form .form-group-edit, body .container .form form .form-group {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   margin-bottom: 15px;
 }
-body .container .form form .form-group input {
-  flex: 1;
+body .container .demoo .formEdit .form-group-edit input, body .container .demoo .formEdit .form-group input, body .container .demoo form .form-group-edit input, body .container .demoo form .form-group input, body .container .form .formEdit .form-group-edit input, body .container .form .formEdit .form-group input, body .container .form form .form-group-edit input, body .container .form form .form-group input {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin-top: 5px;
 }
-body .container .form form button {
+body .container .demoo .formEdit button, body .container .demoo form button, body .container .form .formEdit button, body .container .form form button {
   background-color: #FD7014;
   color: #222831;
   border: none;
@@ -103,6 +103,6 @@ body .container .form form button {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-body .container .form form button:hover {
+body .container .demoo .formEdit button:hover, body .container .demoo form button:hover, body .container .form .formEdit button:hover, body .container .form form button:hover {
   background-color: #dc5802;
 }/*# sourceMappingURL=table.css.map */
