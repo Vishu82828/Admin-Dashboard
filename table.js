@@ -78,7 +78,7 @@ async function myedit(id) {
     document.getElementById('editId').value = data.id; // Populate the ID field
     document.getElementById('ename').value = data.name; // Populate the name field
     document.getElementById('eusername').value = data.username || ''; // Populate the username field
-    document.getElementById('eemail').value = data.email; // Populate the email field
+    document.getElementById('eemail').value = data.email; // Populate 
     document.getElementById('address').value = data.streetAddress; // Populate the address field (ensure consistency)
     document.getElementById('demoo').style.display = 'block'; // Show the edit form
 }
