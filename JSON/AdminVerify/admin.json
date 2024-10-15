@@ -1,8 +1,11 @@
 {
-    "Admin":[
-        {
-            "name":"vishu",
-            "pass":1234
-        }
-    ]
+  "Admin": [
+    {
+      "id": "a354",
+      "name": "Vishwajeet Kumar Singh",
+      "username": "vishu",
+      "email": "vishwajeetsingh8422@gmail.com",
+      "password": "1234"
+    }
+  ]
 }
