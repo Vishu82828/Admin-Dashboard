@@ -10,12 +10,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(87, 79, 79, 0.5607843137);
+  background: linear-gradient(to bottom right, white, #00A693);
+  overflow: hidden; /* Prevents the page from scrolling when forms move */
 }
 
 .container {
   width: 300px;
-  margin: auto;
+  height: 400px; /* Set height to make space for transitions */
+  position: relative; /* Set relative position for containing the forms */
 }
 
 .form-box {
@@ -24,11 +26,38 @@ body {
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: all 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  opacity: 1;
+  z-index: 1; /* Ensure it's above the other form */
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none; /* Disables interaction with hidden form */
+}
+
+#loginBox {
+  transform: translateY(0);
+}
+
+#signupBox {
+  transform: translateY(100%); /* Moves the sign-up form down initially */
+}
+
+/* When showing the signup form */
+.signup-active #loginBox {
+  transform: translateY(-100%); /* Moves the login form up */
+  opacity: 0;
+}
+
+.signup-active #signupBox {
+  transform: translateY(0); /* Brings the sign-up form up */
+  opacity: 1;
+  z-index: 2; /* Brings sign-up form in front of login form */
 }
 
 h1 {
@@ -41,17 +70,25 @@ p {
   color: #867a7a;
 }
 
-.input-group {
+.input-group,
+.form-group {
   margin-bottom: 20px;
 }
-.input-group input {
+.input-group input,
+.form-group input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
+  transition: border-color 0.3s ease;
 }
-.input-group button.btn {
+.input-group input:focus,
+.form-group input:focus {
+  border-color: #32CD32;
+}
+.input-group button.btn,
+.form-group button.btn {
   width: 100%;
   padding: 10px;
   background-color: #32CD32;
@@ -61,22 +98,13 @@ p {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.input-group button.btn:hover {
+.input-group button.btn:hover,
+.form-group button.btn:hover {
   background-color: #2E8B57;
 }
-.input-group button.btn:active {
+.input-group button.btn:active,
+.form-group button.btn:active {
   transform: scale(0.98);
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-.form-group input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
 }
 
 .toggle {
