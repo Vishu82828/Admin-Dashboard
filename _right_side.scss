@@ -23,29 +23,79 @@
                 display: none
             }
             .theme-toggle{
-                background-color: $white;
-                display: flex;
-                justify-content: center;
-                height: 1.6rem;
-                width: 4.2rem;
-                cursor: pointer;
-                border-radius: $border-radius-1;
-                span{
-                    font-size: 1.2rem;
-                    width: 50%;
-                    height: 100%;
+                // background-color: $white;
+                // display: flex;
+                // justify-content: center;
+                // height: 1.6rem;
+                // width: 4.2rem;
+                // cursor: pointer;
+                // border-radius: $border-radius-1;
+                // span{
+                //     font-size: 1.2rem;
+                //     width: 50%;
+                //     height: 100%;
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: center;
+                //     &:active{
+                //         background-color: $primary;
+                //         color: #fff;
+                //     }
+                //     .act{
+                //         background-color: $primary;
+                //         color: #fff;
+                //     }
+                // }
+                // button {
+                //     padding: 10px 20px;
+                //     background-color: #7380ec;
+                //     color: white;
+                //     border: none;
+                //     border-radius: 5px;
+                //     cursor: pointer;
+                // }
+
+                // body.dark-mode {
+                //     background-color: #181a1e;
+                //     color: #edeffd;
+                // }
+                
+                // button.dark-mode {
+                //     background-color: #ff7782;
+                //     color: #fff;
+                // }
+            
                     display: flex;
-                    align-items: center;
                     justify-content: center;
-                    &:active{
+                    align-items: center;
+                    width: 4rem;
+                    padding: 0.5rem;
+                    background-color: $white;
+                    border-radius: 1.2rem;
+                    cursor: pointer;
+                  
+                    span {
+                      display: block;
+                      width: 50%;
+                      text-align: center;
+                      padding: 0.4rem;
+                      transition: background-color 0.2s ease;
+                  
+                      &.active {
                         background-color: $primary;
-                        color: #fff;
+                        color: $white;
+                      }
                     }
-                    .act{
-                        background-color: $primary;
-                        color: #fff;
+                  
+                    body.dark-mode & {
+                      background-color: $dark-content;
+                  
+                      span.active {
+                        background-color: $white;
+                        color: $dark;
+                      }
                     }
-                }
+                
             }
             .profile{
                 display: flex;

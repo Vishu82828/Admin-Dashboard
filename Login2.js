@@ -21,7 +21,7 @@ document.querySelector("#signupBox form").addEventListener("submit", function (e
     // Save the updated users array back to localStorage
     localStorage.setItem("users", JSON.stringify(users));
 
-    alert("User signed up successfully!");
+    //alert("User signed up successfully!");
 
     document.querySelector("#signupBox form").reset();
     toggleForms();
