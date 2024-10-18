@@ -1,0 +1,190 @@
+// Variables
+$primary: #7380ec;
+$danger: #ff7782;
+$success: #41f1b6;
+$white: #fff;
+$dark: #363949;
+$warning: #ff4edc;
+$light: rgba(132, 139, 200, 0.18);
+$color-background: #f6f6f9;
+$dark-background: #181a1e;
+$dark-content: #202528;
+$dark-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+
+// Mixin for profile images
+@mixin profileImage {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// General styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-background;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: $dark-background;
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Container layout for multiple pages
+.container {
+  display: grid;
+  grid-template-columns: 14rem auto 14rem;
+  gap: 1.8rem;
+  width: 96%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+// Sidebar Styling
+.sidebar {
+  background-color: $white;
+  height: 85vh;
+  padding: 1rem;
+  position: fixed;
+
+  a {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    color: $dark;
+    transition: color 0.2s ease, background-color 0.2s ease;
+
+    &:hover {
+      background-color: $light;
+      color: $primary;
+    }
+  }
+
+  body.dark-mode & {
+    background-color: $dark-content;
+  }
+}
+
+// Main content for each page
+main {
+  margin-top: 1.4rem;
+  padding: 2rem;
+  h1 {
+    color: $dark;
+  }
+
+  .insights,
+  .recent-order {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+
+.recent-order {
+  table {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: $white;
+    border-radius: 0.8rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+
+    thead {
+      background-color: $primary;
+      color: $white;
+    }
+
+    tbody tr {
+      &:hover {
+        background-color: $light;
+      }
+    }
+  }
+
+  body.dark-mode & {
+    background-color: $dark-content;
+  }
+}
+
+// Profile Section
+.profile {
+  display: flex;
+  align-items: center;
+
+  .profile-photo {
+    @include profileImage;
+  }
+
+  .info h3 {
+    color: $dark;
+  }
+
+  body.dark-mode & {
+    .info h3 {
+      color: $white;
+    }
+  }
+}
+
+// Dark mode toggle
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  padding: 0.5rem;
+  background-color: $white;
+  border-radius: 1.2rem;
+  cursor: pointer;
+
+  span {
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 0.4rem;
+    transition: background-color 0.2s ease;
+
+    &.active {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+  body.dark-mode & {
+    background-color: $dark-content;
+
+    span.active {
+      background-color: $white;
+      color: $dark;
+    }
+  }
+}
+
+.Date&Time {
+    text-align: center; /* Center align the text */
+    font-size: 2rem; /* Font size for date and time */
+    color: #363949; /* Text color */
+    margin: 1rem 0; /* Margin for spacing */
+}
+
+#digitalClock {
+    font-weight: bold; /* Bold for emphasis */
+}
+
+  

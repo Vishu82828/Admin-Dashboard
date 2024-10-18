@@ -16,7 +16,7 @@ async function fetch_data() {
             <td>${value.name}</td>
             <td>${value.username}</td>
             <td>${value.email}</td>
-            <td>${value.streetAddress}</td> <!-- Ensure it's streetAddress here -->
+            <td>${value.streetAddress}</td>
             <td><button onclick="mydel('${value.id}')" class="tablebutton">Delete</button></td>
             <td><button onclick="myedit(${value.id})" class="tablebutton">Edit</button></td>
         </tr>

@@ -333,29 +333,29 @@ main .recent_order table .primary {
   display: none;
 }
 .container .right .top .theme-toggle {
-  background-color: #fff;
   display: flex;
   justify-content: center;
-  height: 1.6rem;
-  width: 4.2rem;
+  align-items: center;
+  width: 4rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 1.2rem;
   cursor: pointer;
-  border-radius: 0.4rem;
 }
 .container .right .top .theme-toggle span {
-  font-size: 1.2rem;
+  display: block;
   width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 0.4rem;
+  transition: background-color 0.2s ease;
 }
-.container .right .top .theme-toggle span:active {
+.container .right .top .theme-toggle span.active {
   background-color: #7380ec;
   color: #fff;
 }
-.container .right .top .theme-toggle span .act {
-  background-color: #7380ec;
-  color: #fff;
+body.dark-mode .container .right .top .theme-toggle span.active {
+  background-color: #fff;
+  color: #363949;
 }
 .container .right .top .profile {
   display: flex;

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f9;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.88rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #181a1e;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 14rem auto 14rem;
+  gap: 1.8rem;
+  width: 96%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #fff;
+  height: 85vh;
+  padding: 1rem;
+  position: fixed;
+}
+.sidebar a {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  color: #363949;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.sidebar a:hover {
+  background-color: rgba(132, 139, 200, 0.18);
+  color: #7380ec;
+}
+body.dark-mode .sidebar {
+  background-color: #202528;
+}
+
+main {
+  margin-top: 1.4rem;
+  padding: 2rem;
+}
+main h1 {
+  color: #363949;
+}
+main .insights,
+main .recent-order {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.recent-order table {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+}
+.recent-order table thead {
+  background-color: #7380ec;
+  color: #fff;
+}
+.recent-order table tbody tr:hover {
+  background-color: rgba(132, 139, 200, 0.18);
+}
+body.dark-mode .recent-order {
+  background-color: #202528;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile .profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.profile .info h3 {
+  color: #363949;
+}
+body.dark-mode .profile .info h3 {
+  color: #fff;
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+.theme-toggle span {
+  display: block;
+  width: 50%;
+  text-align: center;
+  padding: 0.4rem;
+  transition: background-color 0.2s ease;
+}
+.theme-toggle span.active {
+  background-color: #7380ec;
+  color: #fff;
+}
+body.dark-mode .theme-toggle {
+  background-color: #202528;
+}
+body.dark-mode .theme-toggle span.active {
+  background-color: #fff;
+  color: #363949;
+}/*# sourceMappingURL=try.css.map */
