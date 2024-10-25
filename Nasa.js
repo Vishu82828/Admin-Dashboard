@@ -1,4 +1,4 @@
-let apiKey = "KMt9xHHhX09ZUTXBj35m7Lp3nmBRK5Q2Qo4NpIvF"
+let apiKey = ""
 let apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
 let place = document.getElementById("container")
 fetch(apiUrl)
